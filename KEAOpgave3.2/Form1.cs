@@ -26,9 +26,9 @@ namespace KEAOpgave3._2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            name = textBoxName.Text.ToLower();
-            if (name == "børge")
-                labelRes.Text = "Øv ud Børge";
+            name = textBoxName.Text.ToLower(); // Converts to lowercase, adds whatever in textbos into name. No discrimination except for "børge"
+            if (name == "børge") // if name is børge
+                labelRes.Text = "Øv ud Børge"; 
             else
                 labelRes.Text = $"Velkommen {name}";
         }
